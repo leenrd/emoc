@@ -7,9 +7,7 @@ const repl = async () => {};
 
 if (require.main === module) {
   console.log(
-    chalk.red(
-      `Welcome to the ${chalk.bgYellow('Dropbear')} Programming Language`,
-    ),
+    chalk.red(`Welcome to the ${chalk.bgYellow('Emoc')} Programming Language`),
   );
   repl();
 }

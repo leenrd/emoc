@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Steve Kinney <hello@stevekinney.net> (https://stevekinney.net)",
+  "author": "Leenard zarate (https://leenard.tech)",
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.4.5",
@@ -25,7 +25,7 @@
     "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "babel-jest": "^24.8.0",
+    "babel-jest": "^29.7.0",
     "jest": "^24.8.0",
     "mock-fs": "^4.10.0"
   },
