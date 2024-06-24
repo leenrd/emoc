@@ -6,7 +6,7 @@ const traverseNode = ({ node, parent, visitor }) => {
   }
 
   if (node.arguments) {
-    traverseArray({ node: node.arguments, parent: node, visitor });
+    traverseArray({ array: node.arguments, parent: node, visitor });
   }
 
   if (methods && methods.exit) {
@@ -24,13 +24,8 @@ const traverseArray = ({ array, parent, visitor }) => {
   });
 };
 
-const traverse = (node, visitor) => {};
+const traverse = (node, visitor) => {
+  traverseNode({ node, visitor });
+};
 
 module.exports = { traverse };
-
-// const visitor = {
-//   VariableDeclaration({ node, paren }) {
-//     enter({ node, parent }) {},
-//     exit() {}
-//   },
-// };

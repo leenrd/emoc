@@ -19,9 +19,18 @@ const getIdentifier = (node) => {
   throw new ReferenceError(`${node.name} is not defined man`);
 };
 
+const define = (node) => {
+  // environment[identifier.name] = evaluate(assignment);
+  const [identifier, assignment] = node.arguments;
+};
+
 const evaluate = (node) => {
   if (node.type === 'CallExpression') {
     return apply(node);
+  }
+
+  if (node.type === 'VariableDeclaration') {
+    return define(node);
   }
 
   if (node.type === 'Identifier') {
