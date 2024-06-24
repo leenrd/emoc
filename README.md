@@ -1,6 +1,6 @@
 # Emoc - the modern language for the web
 
-> [! Important]
+> [!Important]
 >
 > Emoc is a layer of abstraction to javascript, that makes it less cryptic and more readable.
 
