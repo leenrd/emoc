@@ -1,6 +1,15 @@
-# Emoc - the modern javascript
+# Emoc - the modern language for the web
 
-## Getting started
+> [! Important]
+>
+> Emoc is a layer of abstraction to javascript, that makes it less cryptic and more readable.
+
+## Features
+
+- Parsets: lexical analysis, syntactic analysis
+- repl and cli
+- traversing & transforming the AST
+- etc.
 
 Before starting the course, please have [VSCode](https://code.visualstudio.com/) or another code editor installed. Make sure to install the testing framework [jest](https://jestjs.io/docs/en/getting-started).
 
