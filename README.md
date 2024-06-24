@@ -7,7 +7,7 @@
 ## Features
 
 - Parsets: lexical analysis, syntactic analysis
-- repl and cli
+- repl and cli + babel
 - traversing & transforming the AST
 - etc.
 
