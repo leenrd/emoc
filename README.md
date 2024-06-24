@@ -2,7 +2,7 @@
 
 > [!Important]
 >
-> Emoc is a layer of abstraction to javascript, that makes it less cryptic and more readable.
+> Emoc is a basic layer of abstraction to javascript, that makes it less cryptic and more readable.
 
 ## Features
 
