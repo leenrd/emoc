@@ -5,17 +5,30 @@ const { parseAndEvaluate } = require('./parse-and-evaluate');
 
 const askQuestions = () => {
   const questions = [
-    { name: 'COMMAND', type: 'input', message: chalk.blue('>') },
+    { name: 'COMMAND', type: 'input', message: chalk.blue('->') },
   ];
 
   return prompt(questions);
 };
 
-const repl = async () => {};
+const repl = async () => {
+  try {
+    const answers = await askQuestions();
+    const { COMMAND } = answers;
+
+    if (COMMAND.trim()) {
+      console.log(chalk.yellow(parseAndEvaluate(COMMAND)));
+    }
+  } catch (error) {
+    console.log(chalk.red(error));
+  }
+
+  repl();
+};
 
 if (require.main === module) {
   console.log(
-    chalk.red(`Welcome to the ${chalk.bgYellow('Emoc')} Programming Language`),
+    chalk.red(`Welcome to the ${chalk.bgBlue('Emoc')} Programming Language`),
   );
   repl();
 }
